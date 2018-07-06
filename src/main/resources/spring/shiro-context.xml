@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+
+    <!-- 缓存管理器 -->
+    <bean id="cacheManager" class="com.wang.utils.SpringCacheManagerWrapper">
+        <property name="cacheManager" ref="springCacheManager"/>
+    </bean>
+    <!-- 凭证匹配器 -->
+    <bean id="credentialsMatcher" class="com.wang.utils.RetryLimitHashedCredentialsMatcher">
+        <constructor-arg ref="cacheManager"/>
+        <property name="hashAlgorithmName" value="md5"/>
+        <property name="hashIterations" value="2"/>
+        <property name="storedCredentialsHexEncoded" value="true"/>
+    </bean>
+
+    <!--声明一个Service 注入到自定义Realm-->
+    <bean id="userService" class="com.wang.service.Impl.UserServiceImpl"/>
+    <bean id="permissionService" class="com.wang.service.Impl.PermissionServiceImpl"/>
+    <!-- 自定义Realm -->
+    <bean id="myShiroRealm" class="com.wang.realm.MyShiroReaml">
+        <!-- businessManager 用来实现用户名密码的查询 -->
+        <property name="userService" ref="userService" />
+        <property name="permissionService" ref="permissionService" />
+        <!-- 如果不加入密码匹配的操作，密码就不会存在 -->
+        <!-- 加入了密码匹配器之后，就会默认将前台传递过来的密码自动MD5加密 -->
+        <property name="credentialsMatcher">
+            <bean class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+                <!-- 加密的方式 -->
+                <constructor-arg index="0" type="java.lang.String" value="MD5" />
+                <!-- 加密的次数，默认是1次 -->
+                <property name="hashIterations" value="2"/>
+            </bean>
+        </property>
+    </bean>
+
+    <!-- 安全管理器 -->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <!-- 注入realm -->
+        <property name="realm" ref="myShiroRealm"/>
+    </bean>
+
+
+    <!-- 基于Form表单的身份验证过滤器 -->
+    <bean id="formAuthenticationFilter" class="org.apache.shiro.web.filter.authc.FormAuthenticationFilter">
+        <property name="usernameParam" value="username"/>
+        <property name="passwordParam" value="password"/>
+        <property name="rememberMeParam" value="rememberMe"/>
+        <property name="loginUrl" value="/login"/> <!--没有登录的时候，跳转到这个页面-->
+    </bean>
+
+
+    <!-- Shiro的Web过滤器 -->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" /> <!--加载管理器-->
+		<property name="loginUrl" value="/login" /> <!--没有登录的时候，跳转到这个页面-->
+		<property name="unauthorizedUrl" value="/nopermission" /> <!--当没有权限的时候，跳转到这个url-->
+        <property name="filters">
+            <util:map>
+                <entry key="authc" value-ref="formAuthenticationFilter"/>
+            </util:map>
+        </property>
+		<property name="filterChainDefinitions">
+			<value>
+				/login = anon <!--可以不需要登录-->
+                /test = anon <!--可以不需要登录-->
+				/register = anon <!--可以不需要登录-->
+				/system/* = authc, perms[system:*]  <!-- perms 表示需要该权限才能访问的页面 -->
+				/module/* = authc, perms[module:*]
+				/author/* = authc, perms[author:*]
+				/logout = logout
+				/* = authc <!-- authc 表示需要认证才能访问的页面 -->
+			</value>
+		</property>
+	</bean>
+
+    <import resource="classpath:spring/spring-ehcache.xml"/>
+
+</beans>
