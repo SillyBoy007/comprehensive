@@ -3,7 +3,7 @@ package com.wang.entity.vo;
 import java.util.List;
 
 /**
- * 返回分页数据类
+ * 返回layui分页数据类
  * @param <T>
  */
 public class PageList<T> {
