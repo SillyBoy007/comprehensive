@@ -53,6 +53,7 @@ var userPage ={
     '                </div>\n' +
     '            </div>\n' +
     '        </form>'
+
 };
 layui.use(['table','laydate','form'], function(){
     var table = layui.table,laydate = layui.laydate,form = layui.form;
