@@ -5,9 +5,11 @@ import com.wang.entity.vo.PageList;
 import com.wang.entity.vo.RetResult;
 import com.wang.entity.vo.UserVo;
 import com.wang.service.UserService;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
@@ -30,10 +32,17 @@ public class UserController {
         return userPageList;
     }
 
-    @RequestMapping("doLocked")
+    @RequestMapping("/doLocked")
     @ResponseBody
-    public RetResult doUserLocked(){
-        return null;
+    public RetResult doUserLocked(@RequestParam("id") String id){
+        try {
+            userService.doLocked(id);
+            return RetResult.successRet(null);
+        }catch (Exception e){
+            e.printStackTrace();
+            return RetResult.errorRet(-1,"锁定失败");
+        }
+
     }
 
 

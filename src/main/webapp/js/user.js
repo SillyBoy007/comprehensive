@@ -142,11 +142,10 @@ layui.use(['table','laydate','form'], function(){
         var data = obj.data;
         userPage.data = obj.data;
 
-
         if(obj.event === 'del'){
             layer.confirm('真的要锁定该用户么？',{icon: 3, title:'确定操作'}, function(index){
-                obj.del();
-                $.post('/doLocked?id='+data.id,function (res) {
+              //  obj.del();
+                $.post(basePath+'/user/doLocked?id='+data.id,function (res) {
                     userPage.reload(table,res);
                 });
                 layer.close(index);
