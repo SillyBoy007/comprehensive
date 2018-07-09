@@ -73,4 +73,11 @@ public class UserServiceImpl implements UserService {
         return user;
     }
 
+    public void doLocked(String id) {
+        User user = new User();
+        user.setId(id);
+        user.setLocked(true);
+        userMapper.updateByPrimaryKeySelective(user);
+    }
+
 }
