@@ -7,17 +7,354 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbbf9dc9-d5ef-487b-a5af-5a34bce9bcc7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/practice.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/Impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/Impl/UserServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/user.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/user.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/controller/ExcelPOIController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/controller/FileUploadController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/controller/LoginController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/controller/MenuController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/controller/PageController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/controller/RegisterController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/controller/RoleController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/controller/UserController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/Menu.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/MenuExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/MenuExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/MenuExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/MenuExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/Permission.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/PermissionExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/PermissionExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/PermissionExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/PermissionExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/Role.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/RoleExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/RoleExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/RoleExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/RoleExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/RolePermission.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/RolePermissionExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/RolePermissionExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/RolePermissionExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/RolePermissionExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/Upload.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/UploadExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/UploadExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/UploadExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/UploadExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/UserExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/UserExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/UserExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/UserExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/UserRole.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/UserRoleExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/UserRoleExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/UserRoleExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/UserRoleExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/vo/PageList.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/vo/PageVo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/vo/RetResult.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/entity/vo/UserVo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/MenuMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/MenuMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/PermissionMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/PermissionMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/RoleMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/RoleMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/RolePermissionMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/RolePermissionMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/UploadMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/UploadMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/UserMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/UserMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/UserRoleMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/mapper/UserRoleMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/realm/MyShiroReaml.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/service/Impl/MenuServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/service/Impl/PermissionServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/service/Impl/RoleServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/service/Impl/UploadServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/service/Impl/UserServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/service/MenuService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/service/PermissionService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/service/RoleService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/service/UploadService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/service/UserService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/utils/CommonUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/utils/ExcelUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/utils/PasswordHelper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/utils/RetryLimitHashedCredentialsMatcher.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/utils/SpringCacheManagerWrapper$SpringCacheWrapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wang/utils/SpringCacheManagerWrapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ehcache/ehcache.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/sqlMapConfig.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resource.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext-dao.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext-service.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/shiro-context.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-ehcache.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/springmvc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/controller/ExcelPOIController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/controller/FileUploadController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/controller/LoginController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/controller/MenuController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/controller/PageController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/controller/RegisterController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/controller/RoleController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/controller/UserController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/Menu.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/MenuExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/MenuExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/MenuExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/MenuExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/Permission.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/PermissionExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/PermissionExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/PermissionExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/PermissionExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/Role.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/RoleExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/RoleExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/RoleExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/RoleExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/RolePermission.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/RolePermissionExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/RolePermissionExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/RolePermissionExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/RolePermissionExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/Upload.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/UploadExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/UploadExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/UploadExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/UploadExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/UserExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/UserExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/UserExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/UserExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/UserRole.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/UserRoleExample$Criteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/UserRoleExample$Criterion.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/UserRoleExample$GeneratedCriteria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/UserRoleExample.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/vo/PageList.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/vo/PageVo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/vo/RetResult.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/entity/vo/UserVo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/MenuMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/MenuMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/PermissionMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/PermissionMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/RoleMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/RoleMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/RolePermissionMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/RolePermissionMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/UploadMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/UploadMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/UserMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/UserMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/UserRoleMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/mapper/UserRoleMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/realm/MyShiroReaml.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/service/Impl/MenuServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/service/Impl/PermissionServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/service/Impl/RoleServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/service/Impl/UploadServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/service/Impl/UserServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/service/MenuService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/service/PermissionService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/service/RoleService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/service/UploadService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/service/UserService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/utils/CommonUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/utils/ExcelUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/utils/PasswordHelper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/utils/RetryLimitHashedCredentialsMatcher.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/utils/SpringCacheManagerWrapper$SpringCacheWrapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/com/wang/utils/SpringCacheManagerWrapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/db.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/ehcache/ehcache.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/mybatis/sqlMapConfig.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/resource.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/spring/applicationContext-dao.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/spring/applicationContext-service.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/spring/shiro-context.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-ehcache.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/classes/spring/springmvc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/jsp/component/header.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/jsp/component/left.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/jsp/error.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/jsp/include.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/jsp/index.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/jsp/views/404.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/jsp/views/fileupload.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/jsp/views/login.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/jsp/views/nopermission.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/jsp/views/order.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/jsp/views/register.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/jsp/views/role.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/jsp/views/user.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/bsh-2.0b6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.8.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.9.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.2.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/druid-1.0.12.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/ehcache-2.10.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.2.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.5.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.5.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.9.12.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.5.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.9.12.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/jcommander-1.72.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.2.8.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/poi-3.11.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/poi-ooxml-3.11.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/poi-ooxml-schemas-3.11.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/shiro-core-1.2.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/shiro-spring-1.2.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/shiro-web-1.2.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/slf4j-jdk14-1.6.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/spring-context-support-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/stax-api-1.0.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/testng-6.14.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/lib/xmlbeans-2.6.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/css/comm.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/js/comm.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/js/fileupload.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/js/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/js/jquery-3.3.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/js/register.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/js/user.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/js/vue.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/css/layui.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/css/layui.mobile.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/css/modules/code.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/css/modules/laydate/default/laydate.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/css/modules/layer/default/icon-ext.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/css/modules/layer/default/icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/css/modules/layer/default/layer.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/css/modules/layer/default/loading-0.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/css/modules/layer/default/loading-1.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/css/modules/layer/default/loading-2.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/font/iconfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/font/iconfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/font/iconfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/font/iconfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/0.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/1.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/10.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/11.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/12.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/13.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/14.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/15.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/16.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/17.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/18.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/19.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/2.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/20.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/21.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/22.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/23.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/24.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/25.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/26.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/27.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/28.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/29.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/3.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/30.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/31.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/32.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/33.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/34.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/35.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/36.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/37.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/38.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/39.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/4.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/40.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/41.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/42.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/43.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/44.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/45.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/46.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/47.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/48.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/49.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/5.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/50.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/51.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/52.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/53.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/54.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/55.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/56.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/57.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/58.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/59.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/6.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/60.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/61.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/62.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/63.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/64.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/65.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/66.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/67.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/68.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/69.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/7.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/70.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/71.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/8.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/images/face/9.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/carousel.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/code.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/element.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/flow.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/form.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/laydate.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/layedit.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/layer.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/laypage.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/laytpl.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/mobile.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/rate.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/table.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/tree.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/upload.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/lay/modules/util.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/layui.all.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/practice-1.0-SNAPSHOT/layui/layui.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +369,10 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
+            <state relative-caret-position="924">
               <caret line="40" column="46" lean-forward="false" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#835#841#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,7 +391,7 @@
       <file leaf-file-name="user.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/views/user.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
+            <state relative-caret-position="508">
               <caret line="40" column="56" lean-forward="false" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
               <folding />
             </state>
@@ -134,9 +470,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="16" />
-    <option name="y" value="17" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="294" />
+    <option name="y" value="32" />
     <option name="width" value="1400" />
     <option name="height" value="1030" />
   </component>
@@ -158,7 +494,6 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -264,6 +599,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,46 +790,47 @@
       <workItem from="1530958494345" duration="3147000" />
       <workItem from="1530976661677" duration="783000" />
       <workItem from="1531016396955" duration="1833000" />
+      <workItem from="1531095641689" duration="10000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5763000" />
+    <option name="totallyTimeSpent" value="5773000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="17" width="1400" height="1030" extended-state="0" />
+    <frame x="294" y="32" width="1400" height="1030" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3436754" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23970944" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3436754" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2832061" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29007635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23970944" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -516,7 +853,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#835#841#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -564,7 +900,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#835#841#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -643,10 +978,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/controller/FileUploadController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="924">
+          <caret line="40" column="46" lean-forward="false" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6204">
+          <caret line="219" column="36" lean-forward="false" selection-start-line="219" selection-start-column="36" selection-end-line="219" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -664,28 +1009,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/controller/FileUploadController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6204">
-          <caret line="219" column="36" lean-forward="false" selection-start-line="219" selection-start-column="36" selection-end-line="219" selection-end-column="36" />
+        <state relative-caret-position="165">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="40" column="46" lean-forward="false" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#835#841#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/views/user.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
+        <state relative-caret-position="508">
           <caret line="40" column="56" lean-forward="false" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
           <folding />
         </state>
