@@ -2,6 +2,7 @@ package com.wang.mapper;
 
 import com.wang.entity.RolePermission;
 import com.wang.entity.RolePermissionExample;
+import com.wang.entity.vo.PageVo;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -28,4 +29,6 @@ public interface RolePermissionMapper {
     int updateByPrimaryKeySelective(RolePermission record);
 
     int updateByPrimaryKey(RolePermission record);
+
+    List<RolePermission> selectRolePermissionByPageList(PageVo pageVo);
 }

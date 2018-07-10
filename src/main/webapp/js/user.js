@@ -132,7 +132,7 @@ layui.use(['table','laydate','form'], function(){
 
 
     $('#export_excel').on('click',function () {
-        $('#page_data').val(JSON.stringify(dataTable.data));
+        $('#page_data').val(JSON.stringify(userPage.data));
         $("#download_form").submit();
     });
 

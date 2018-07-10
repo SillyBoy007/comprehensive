@@ -1,6 +1,7 @@
 package com.wang.service.Impl;
 
 import com.wang.entity.*;
+import com.wang.entity.vo.PageVo;
 import com.wang.mapper.PermissionMapper;
 import com.wang.mapper.RolePermissionMapper;
 import com.wang.mapper.UserRoleMapper;
@@ -55,6 +56,16 @@ public class PermissionServiceImpl implements PermissionService {
         }
 
         return permissions;
+    }
+
+    public List<RolePermission> getRolePermissionPageList(PageVo pageVo) {
+        pageVo.setPage((pageVo.getPage()-1)*pageVo.getLimit());
+        List<RolePermission> rolePermissions = rolePermissionMapper.selectRolePermissionByPageList(pageVo);
+        return rolePermissions;
+    }
+
+    public Permission getPermissionById(String id) {
+        return permissionMapper.selectByPrimaryKey(id);
     }
 
 

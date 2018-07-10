@@ -62,4 +62,8 @@ public class PageController {
         return "/views/role";
     }
 
+    @RequestMapping(value = "/author/permission",method = RequestMethod.GET)
+    public String toPermissionPage(){
+        return "/views/permission";
+    }
 }

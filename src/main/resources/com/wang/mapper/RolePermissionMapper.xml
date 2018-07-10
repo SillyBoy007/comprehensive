@@ -178,4 +178,11 @@
       permissionid = #{permissionid,jdbcType=VARCHAR}
     where id = #{id,jdbcType=VARCHAR}
   </update>
+  <select id="selectRolePermissionByPageList" parameterType="com.wang.entity.vo.PageVo" resultType="com.wang.entity.RolePermission">
+      select <include refid="Base_Column_List"/>
+      from role_permission
+      <if test="page !=0 or limit!=0">
+          limit #{page},#{limit}
+      </if>
+  </select>
 </mapper>
