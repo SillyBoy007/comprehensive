@@ -6,6 +6,7 @@ import com.wang.entity.RolePermission;
 import com.wang.entity.vo.PageList;
 import com.wang.entity.vo.PageVo;
 import com.wang.entity.vo.RetResult;
+import com.wang.entity.vo.RolePermissionVo;
 import com.wang.service.PermissionService;
 import com.wang.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -47,13 +47,13 @@ public class PermissionController {
         pageList.setMsg("ok");
         pageList.setCode("0");
         pageList.setData(list);
-        pageList.setCount(10);
+        pageList.setCount(permissionService.countRolePermission());
         return pageList;
     }
 
     @RequestMapping("/addRolePermission")
     @ResponseBody
-    public RetResult addRolePermission(RolePermission rolePermission){
+    public RetResult addRolePermission(RolePermissionVo rolePermissionVo){
 
         return null;
     }

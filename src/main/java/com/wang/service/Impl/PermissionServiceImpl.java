@@ -68,5 +68,10 @@ public class PermissionServiceImpl implements PermissionService {
         return permissionMapper.selectByPrimaryKey(id);
     }
 
+    public int countRolePermission() {
+        RolePermissionExample rolePermissionExample = new RolePermissionExample();
+        return rolePermissionMapper.countByExample(rolePermissionExample);
+    }
+
 
 }

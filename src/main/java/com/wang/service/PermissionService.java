@@ -16,7 +16,23 @@ public interface PermissionService {
      */
     List<Permission> getPermissionListByUser(User user);
 
+    /**
+     * 根据分页信息分页返回角色权限列表
+     * @param pageVo 分页信息
+     * @return
+     */
     List<RolePermission> getRolePermissionPageList(PageVo pageVo);
 
+    /**
+     * 根据权限ID获取权限
+     * @param id 权限ID
+     * @return
+     */
     Permission getPermissionById(String id);
+
+    /**
+     * 统计角色权限数量
+     * @return
+     */
+    int countRolePermission();
 }
