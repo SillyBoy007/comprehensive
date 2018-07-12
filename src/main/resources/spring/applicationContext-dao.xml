@@ -32,5 +32,9 @@
         <property name="basePackage" value="com.wang.mapper"/>
     </bean>
 
-
+    <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
+        <constructor-arg name="host" value="localhost"/>
+        <constructor-arg name="port" value="6379"/>
+    </bean>
+<!--    <bean id="jedisClientPool" class="com.wang.service.Impl.JedisClientServiceImpl"/>-->
 </beans>

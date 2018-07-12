@@ -13,6 +13,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * <p>User: Zhang Kaitao
  * <p>Date: 14-1-28
  * <p>Version: 1.0
+ *
+ * 密码输入次数验证，超过一定数量则抛出 ExcessiveAttemptsException异常
  */
 public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher {
 
