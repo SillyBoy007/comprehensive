@@ -1,6 +1,7 @@
 package com.wang.service.Impl;
 
 import com.wang.entity.Role;
+import com.wang.entity.RoleExample;
 import com.wang.entity.UserRole;
 import com.wang.entity.UserRoleExample;
 import com.wang.entity.vo.PageVo;
@@ -10,6 +11,7 @@ import com.wang.mapper.UserRoleMapper;
 import com.wang.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
 
@@ -72,5 +74,16 @@ public class RoleServiceImpl implements RoleService {
             retResult.setCode(1);
             return retResult;
         }
+    }
+
+    public Role getRoleByName(String role) {
+        RoleExample roleExample = new RoleExample();
+        RoleExample.Criteria criteria = roleExample.createCriteria();
+        criteria.andRoleEqualTo(role);
+        List<Role> roles = roleMapper.selectByExample(roleExample);
+        if (!StringUtils.isEmpty(roles) && roles.size()>0){
+            return roles.get(0);
+        }
+        return null;
     }
 }

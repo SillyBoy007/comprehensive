@@ -4,7 +4,6 @@ import com.wang.entity.Menu;
 
 import java.util.List;
 
-
 public interface MenuService {
     /**
      * 根据permissionID获取菜单按钮

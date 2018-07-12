@@ -66,4 +66,9 @@ public class PageController {
     public String toPermissionPage(){
         return "/views/permission";
     }
+
+    @RequestMapping(value = "/practice/excel",method = RequestMethod.GET)
+    public String toPOIPage(){
+        return "/views/poi";
+    }
 }

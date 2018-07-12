@@ -38,13 +38,18 @@ public class ExcelPOIController {
             objects[6] = mgUsers.get(i).getLocked();
             dataList.add(objects);
         }
-
         try {
             String fileName= new String("用户数据表.xls".getBytes("UTF-8"),"iso-8859-1");    //生成word文件的文件名
             ExcelUtil.exportExcel(title,rowsName,dataList,fileName,response);
         }catch (Exception e){
             e.printStackTrace();
         }
+
+    }
+
+    @RequestMapping("/importExcel")
+    @ResponseBody
+    public void  importExcel(){
 
     }
 }

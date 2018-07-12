@@ -2,12 +2,14 @@ package com.wang.service.Impl;
 
 import com.wang.entity.*;
 import com.wang.entity.vo.PageVo;
+import com.wang.entity.vo.RolePermissionVo;
 import com.wang.mapper.PermissionMapper;
 import com.wang.mapper.RolePermissionMapper;
 import com.wang.mapper.UserRoleMapper;
 import com.wang.service.PermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,6 +73,25 @@ public class PermissionServiceImpl implements PermissionService {
     public int countRolePermission() {
         RolePermissionExample rolePermissionExample = new RolePermissionExample();
         return rolePermissionMapper.countByExample(rolePermissionExample);
+    }
+
+    public Permission getPermissionByName(String permission) {
+        PermissionExample permissionExample = new PermissionExample();
+        PermissionExample.Criteria criteria = permissionExample.createCriteria();
+        criteria.andPermissionEqualTo(permission);
+        List<Permission> permissions = permissionMapper.selectByExample(permissionExample);
+        if (!StringUtils.isEmpty(permissions) && permissions.size()>0){
+            return permissions.get(0);
+        }
+        return null;
+    }
+
+    public void addRolePermission(RolePermission rolePermission) {
+        rolePermissionMapper.insert(rolePermission);
+    }
+
+    public void delRolePermission(String id) {
+        rolePermissionMapper.deleteByPrimaryKey(id);
     }
 
 

@@ -4,7 +4,9 @@ import com.wang.entity.Permission;
 import com.wang.entity.RolePermission;
 import com.wang.entity.User;
 import com.wang.entity.vo.PageVo;
+import com.wang.entity.vo.RolePermissionVo;
 
+import java.util.Date;
 import java.util.List;
 
 public interface PermissionService {
@@ -35,4 +37,19 @@ public interface PermissionService {
      * @return
      */
     int countRolePermission();
+
+    /**
+     * 根据权限名称取得权限
+     * @param permission
+     * @return
+     */
+    Permission getPermissionByName(String permission);
+
+    /**
+     * 添加角色和权限
+     * @param rolePermission
+     */
+    void addRolePermission(RolePermission rolePermission);
+
+    void delRolePermission(String id);
 }

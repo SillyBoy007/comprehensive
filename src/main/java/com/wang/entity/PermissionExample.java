@@ -245,72 +245,72 @@ public class PermissionExample {
         }
 
         public Criteria andPermissionIsNull() {
-            addCriterion("permission.js is null");
+            addCriterion("permission is null");
             return (Criteria) this;
         }
 
         public Criteria andPermissionIsNotNull() {
-            addCriterion("permission.js is not null");
+            addCriterion("permission is not null");
             return (Criteria) this;
         }
 
         public Criteria andPermissionEqualTo(String value) {
-            addCriterion("permission.js =", value, "permission.js");
+            addCriterion("permission =", value, "permission");
             return (Criteria) this;
         }
 
         public Criteria andPermissionNotEqualTo(String value) {
-            addCriterion("permission.js <>", value, "permission.js");
+            addCriterion("permission <>", value, "permission");
             return (Criteria) this;
         }
 
         public Criteria andPermissionGreaterThan(String value) {
-            addCriterion("permission.js >", value, "permission.js");
+            addCriterion("permission >", value, "permission");
             return (Criteria) this;
         }
 
         public Criteria andPermissionGreaterThanOrEqualTo(String value) {
-            addCriterion("permission.js >=", value, "permission.js");
+            addCriterion("permission >=", value, "permission");
             return (Criteria) this;
         }
 
         public Criteria andPermissionLessThan(String value) {
-            addCriterion("permission.js <", value, "permission.js");
+            addCriterion("permission <", value, "permission");
             return (Criteria) this;
         }
 
         public Criteria andPermissionLessThanOrEqualTo(String value) {
-            addCriterion("permission.js <=", value, "permission.js");
+            addCriterion("permission <=", value, "permission");
             return (Criteria) this;
         }
 
         public Criteria andPermissionLike(String value) {
-            addCriterion("permission.js like", value, "permission.js");
+            addCriterion("permission like", value, "permission");
             return (Criteria) this;
         }
 
         public Criteria andPermissionNotLike(String value) {
-            addCriterion("permission.js not like", value, "permission.js");
+            addCriterion("permission not like", value, "permission");
             return (Criteria) this;
         }
 
         public Criteria andPermissionIn(List<String> values) {
-            addCriterion("permission.js in", values, "permission.js");
+            addCriterion("permission in", values, "permission");
             return (Criteria) this;
         }
 
         public Criteria andPermissionNotIn(List<String> values) {
-            addCriterion("permission.js not in", values, "permission.js");
+            addCriterion("permission not in", values, "permission");
             return (Criteria) this;
         }
 
         public Criteria andPermissionBetween(String value1, String value2) {
-            addCriterion("permission.js between", value1, value2, "permission.js");
+            addCriterion("permission between", value1, value2, "permission");
             return (Criteria) this;
         }
 
         public Criteria andPermissionNotBetween(String value1, String value2) {
-            addCriterion("permission.js not between", value1, value2, "permission.js");
+            addCriterion("permission not between", value1, value2, "permission");
             return (Criteria) this;
         }
 

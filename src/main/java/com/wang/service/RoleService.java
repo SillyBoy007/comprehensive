@@ -41,4 +41,6 @@ public interface RoleService {
      * @return
      */
     RetResult unSetManage(String id);
+
+    Role getRoleByName(String role);
 }
