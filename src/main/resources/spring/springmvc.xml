@@ -35,13 +35,13 @@
 
 
     <!-- 配置拦截器 -->
-    <mvc:interceptors>
+   <!-- <mvc:interceptors>
         <mvc:interceptor>
-            <!-- 所有的请求都进入拦截器 -->
+            &lt;!&ndash; 所有的请求都进入拦截器 &ndash;&gt;
             <mvc:mapping path="/**" />
-            <!-- 配置具体的拦截器 -->
+            &lt;!&ndash; 配置具体的拦截器 &ndash;&gt;
             <bean class="com.wang.controller.interceptor.APIRateInterceptor" />
         </mvc:interceptor>
 
-    </mvc:interceptors>
+    </mvc:interceptors>-->
 </beans>

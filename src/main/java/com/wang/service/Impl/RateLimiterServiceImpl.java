@@ -2,6 +2,7 @@ package com.wang.service.Impl;
 
 import com.wang.service.JedisClientService;
 import com.wang.service.RateLimiterService;
+import com.wang.utils.CommonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,8 +20,8 @@ public class RateLimiterServiceImpl implements RateLimiterService {
             if (!jedisClient.exists(key)) {
                 jedisClient.hset(key, "last_mill_second", String.valueOf(currMillSecond));
                 jedisClient.hset(key, "curr_permits", "0");
-                jedisClient.hset(key, "max_permits", "50");
-                jedisClient.hset(key, "rate", "400");
+                jedisClient.hset(key, "max_permits", CommonUtils.getProperties("max_permits"));
+                jedisClient.hset(key, "rate",  CommonUtils.getProperties("rate"));
                 return true;
             }
             //获取令牌桶信息，上一个令牌时间，当前可用令牌数，最大令牌数，令牌消耗速率

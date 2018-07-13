@@ -1,7 +1,13 @@
 package com.wang.utils;
 
+import com.wang.controller.APIRateController;
+import org.springframework.util.StringUtils;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 import java.util.UUID;
 
 /**
@@ -26,5 +32,20 @@ public class CommonUtils {
     public static String getUUID(){
         return UUID.randomUUID().toString().replaceAll("-", "");
     }
+
+    /**
+     * 获取 properties
+     * @return
+     * @throws IOException
+     */
+    public static String getProperties(String key) throws IOException {
+        Properties properties = new Properties();
+        InputStream resourceAsStream = CommonUtils.class.getClassLoader().getResourceAsStream("resource.properties");
+        properties.load(resourceAsStream);
+        String property = properties.getProperty(key);
+        return property;
+    }
+
+
 
 }
