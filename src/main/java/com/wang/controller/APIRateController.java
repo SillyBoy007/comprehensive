@@ -56,9 +56,6 @@ public class APIRateController {
     @ResponseBody
     public Map<String,Object> redisapi(String uid) {
         System.out.println("==========================================="+uid);
-        if (!rateLimiterService.acquire("limiter:" + uid, 1, System.currentTimeMillis())) {
-            throw new RuntimeException("操作太过频繁，请休息一会");
-        }
 
         Map<String,Object> map = new HashMap<String, Object>();
         try {
