@@ -1,7 +1,7 @@
 package com.wang.utils;
 
-import com.wang.controller.APIRateController;
-import org.springframework.util.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 
 import java.io.IOException;
 import java.io.InputStream;

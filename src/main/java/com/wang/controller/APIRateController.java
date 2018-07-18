@@ -1,20 +1,12 @@
 package com.wang.controller;
 
-import com.wang.service.JedisClientService;
-import com.wang.service.RateLimiterService;
-import com.wang.utils.CommonUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.testng.annotations.Test;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 import java.util.concurrent.Semaphore;
 
 /**
@@ -25,10 +17,7 @@ public class APIRateController {
     private int i;
     private final Semaphore permit = new Semaphore(10, true);
 
-    @Autowired
-    private RateLimiterService rateLimiterService;
-    @Autowired
-    private JedisClientService jedisClientService;
+
 
     @RequestMapping(value="/semapi",method=RequestMethod.GET)
     @ResponseBody

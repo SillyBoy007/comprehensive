@@ -9,8 +9,17 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
 
-    <context:property-placeholder location="classpath:db.properties"/>
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <!-- 对于读取一个配置文件采取的方案 -->
 
+        <!-- 对于读取两个以上配置文件采取的处理方案 -->
+        <property name="locations">
+            <list>
+                <value>classpath:db.properties</value>
+                <value>classpath:redis.properties</value>
+            </list>
+        </property>
+    </bean>
     <!--dbcp数据源-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
         <property name="driverClassName" value="${jdbc.driver}"/>
@@ -32,9 +41,30 @@
         <property name="basePackage" value="com.wang.mapper"/>
     </bean>
 
-    <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
-        <constructor-arg name="host" value="localhost"/>
-        <constructor-arg name="port" value="6379"/>
+
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxIdle" value="${nosql.pool.maxIdle}" />
+        <property name="maxTotal" value="${nosql.pool.maxTotal}" />
+        <property name="maxWaitMillis" value="${nosql.pool.maxWaitMillis}" />
+        <property name="testOnBorrow" value="${nosql.pool.testOnBorrow}" />
     </bean>
-<!--    <bean id="jedisClientPool" class="com.wang.service.Impl.JedisClientServiceImpl"/>-->
+
+    <bean id="jedisConnectionFactory"
+          class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+        <property name="hostName" value="${jedis.host}" />
+        <property name="port" value="${jedis.port}" />
+      <!--  <property name="password" value="${jedis.password}" />--><!--Err:数据库没有密码不需要配-->
+        <property name="poolConfig" ref="jedisPoolConfig" />
+    </bean>
+
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+        <property name="connectionFactory" ref="jedisConnectionFactory" />
+        <property name="keySerializer">
+            <bean class="org.springframework.data.redis.serializer.StringRedisSerializer" />
+        </property>
+        <property name="valueSerializer">
+            <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer" />
+        </property>
+    </bean>
+
 </beans>
