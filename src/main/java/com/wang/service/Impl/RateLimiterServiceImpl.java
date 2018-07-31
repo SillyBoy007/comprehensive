@@ -1,16 +1,15 @@
 package com.wang.service.Impl;
 
-import com.wang.service.RateLimiterService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
+        import com.wang.service.RateLimiterService;
+        import org.springframework.beans.factory.annotation.Autowired;
+        import org.springframework.data.redis.core.RedisTemplate;
+        import org.springframework.stereotype.Service;
+        import java.util.ArrayList;
+        import java.util.List;
 
 @Service
 public class RateLimiterServiceImpl implements RateLimiterService {
-
 
     @Autowired
     private RedisTemplate redisTemplate;
@@ -60,4 +59,6 @@ public class RateLimiterServiceImpl implements RateLimiterService {
             return false;
         }
     }
+
+
 }
