@@ -8,6 +8,7 @@ import com.wang.entity.vo.PageVo;
 import com.wang.entity.vo.RetResult;
 import com.wang.service.RoleService;
 import com.wang.service.UserService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -19,9 +20,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
 @Controller
 @RequestMapping("/role")
 public class RoleController {
+    protected static Logger logger = Logger.getLogger(RoleController.class);
     @Autowired
     private RoleService roleService;
     @Autowired
@@ -32,10 +35,12 @@ public class RoleController {
     public PageList<Map> getUserRole(PageVo pageVo){
         try {
             List<UserRole> userRolePageList = roleService.getUserRolePageList(pageVo);
+            logger.info("查询到用户角色的条数"+userRolePageList.size());
             PageList<Map> pageList = new PageList<Map>();
             List<Map> ret = new ArrayList<Map>();
             for (UserRole userRole:userRolePageList){
                 Map<String,Object> retMap = new HashMap<String, Object>();
+                //logger.info("userId:"+userRole.getUserid());
                 User user = userService.getUserById(userRole.getUserid());
                 Role role = roleService.getRoleById(userRole.getRoleid());
                 retMap.put("id",userRole.getId());
@@ -49,10 +54,9 @@ public class RoleController {
             pageList.setCount(roleService.countUserRole());
             return pageList;
         }catch (Exception e){
-            e.printStackTrace();
+            logger.error("错误:"+e);
+            return null;
         }
-        return null;
-
     }
 
     @RequestMapping("/setManage")
